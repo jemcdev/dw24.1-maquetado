@@ -1,0 +1,27 @@
+/* Selectores por etiqueta */
+h1 {
+    color: brown;
+}
+
+#titulo {
+    color: brown;
+}
+.azul {
+    color: blue;
+}
+
+h2 {
+    color: cadetblue;
+}
+
+p {
+    color: slateblue;
+}
+/* Selector por Clase con camelCase*/
+.textoImportante {
+    color: rgb(215, 53, 25);
+}
+
+p .textoImportante {
+    font-size: 32px;
+}
