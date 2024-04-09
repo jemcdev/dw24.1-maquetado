@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /* Selectores por etiqueta */
 h1 {
     color: brown;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 7px;
+    word-spacing: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
+header p {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
 #titulo {
     color: brown;
 }
@@ -12,10 +23,16 @@ h1 {
 
 h2 {
     color: cadetblue;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
 }
 
+section p {
+    text-indent: 32px;
+}
 p {
     color: slateblue;
+    font-family: "Ubuntu", sans-serif;
 }
 /* Selector por Clase con camelCase*/
 .textoImportante {
@@ -23,5 +40,33 @@ p {
 }
 
 p .textoImportante {
-    font-size: 32px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+.lista-ingredientes li {
+    font-style: italic;
+}
+
+ol, ul li {
+    font-family: "Ubuntu", sans-serif;
+}
+
+footer p {
+    text-align: right;
 }
