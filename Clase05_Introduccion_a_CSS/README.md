@@ -1,5 +1,7 @@
 # Clase 05 - Introducción a CSS
 
+
+
 ## 🎯 Temas de Hoy
 - Formas de incluir CSS
 - Selectores por etiqueta, clase e id
@@ -7,7 +9,7 @@
 - Precedencia
 - Estilos para textos
 
-
+![Captura ](images/captura.PNG)
 ## Recursos
  
 - [Foto de Muffin Creatives:](https://www.pexels.com/es-es/foto/foto-en-primer-plano-de-una-persona-sosteniendo-una-pizza-1653877/)
