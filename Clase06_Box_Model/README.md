@@ -9,5 +9,5 @@
 - Bordes
 
 
-![Captura ](images/captura.PNG)
+![Captura ](images/Captura.PNG)
 ## Recursos
