@@ -45,6 +45,12 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
 
+    box-shadow: 0px 5px 10px #1d1c1b8a;
+
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
 }
 
 nav ul {
@@ -69,6 +75,7 @@ nav ul li a:hover {
     width: 45%;
     display: inline-block;
     vertical-align: middle;
+    padding: 20px;
 }
 
 .img-main {
@@ -107,7 +114,22 @@ nav ul li a:hover {
     border: 2px solid #062c52;
     padding: 5px;
     margin-left: 80px;
-    background-color: white
+    background-color: white;
+
+}
+
+.relativo {
+    position: relative;
+}
+.descripcion {
+    background-color: #e92d859a;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom:0px;
+    left: 100px;
 }
 
 h2 {
@@ -124,4 +146,44 @@ h2 {
 #galeria h2 {
     color: white;
     margin-bottom: 30px;
+}
+
+#torneos {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#torneos h2 {
+    text-align: center;
+    background-color: #004384;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background-color: #1d1c1b;
+    color: white;
+    padding: 20PX;
+}
+
+footer P {
+    text-align: center;
+}
+/* Posicionamiento fiexed */
+.chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat img {
+    width: 64px;
+}
+
+/* Absoluto */
+.piezas {
+    position: absolute;
+    top: 750px;
+    right: 400px;
 }
