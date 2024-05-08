@@ -64,3 +64,8 @@ footer {
 .rojo {
     color: rgb(220, 40, 40);
 }
+
+.row {
+    display: flex;
+    gap: 10px;
+}
