@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 .promocion {
-    min-height: 500px;
+    min-height: 300px;
     padding: 35px;
     margin: 36px;
     background-color: #f6f7f9;
@@ -168,6 +168,15 @@ footer ul li a {
 }
 
 @media (max-width: 500px) {
+    nav {
+        height: 200px;
+        position: initial;
+    }
+    nav ul {
+        flex-direction: column;
+        min-height: 200px;
+    }
+
     .galeria {
         min-height: 500px;
         padding: 10px;
@@ -178,7 +187,17 @@ footer ul li a {
         width: 90vw;
     }
     
+    .secundaria {
+        font-size: 16px;
+        padding: 10px;
+        margin: 16px;
+    }
     
+    .promocion {
+        padding: 10px;
+        margin: 16px;
+    }
+
     footer {
 
         flex-direction: column;
@@ -187,9 +206,30 @@ footer ul li a {
 
     footer p {
         text-align: center;
+        padding-left: 0px;
+    } 
+
+    .redes-sociales {
+     
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+}
+
+@media( max-width: 400px){
+    .secundaria {
+        min-height: 200px;
+        padding: 15px;
+        margin: 36px;    
     }
 
-
-
- 
+    .secundaria h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .secundaria p {
+        font-size: 0.5em;
+    }
+    
 }
