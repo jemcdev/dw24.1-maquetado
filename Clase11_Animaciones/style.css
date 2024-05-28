@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header {
+    height: 20vh;
+    background-color: slateblue;
+}
+h1 {
+    font-size: 36px;
+}
+
+nav {
+    background-color: rgb(15, 15, 15);
+    height: 5vh;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+nav ul li a:hover {
+    transform: scale(3);
+    color: rgb(255, 169, 40);
+}
+
+nav input {
+    width: 100px;
+    padding: 5px;
+    transition: width 2s, background-color 3s;
+}
+
+nav input:hover{
+    width: 500px;
+}
+
+nav input:focus{
+    width: 500px;
+    background-color: wheat;
+}
+main {
+    min-height: 70vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+}
+
+.container {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    gap: 1rem
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid salmon;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 1s ;
+}
+
+/* Transforamaciones */
+
+.translate:hover {
+    transform: translate(50px, -40px);
+    background-color: slategrey;
+}
+
+.rotateZ:hover {
+    transform:  rotateZ(45deg);
+    background-color: skyblue;
+}
+
+.rotateY:hover {
+    transform: rotateY(35deg);
+}
+
+
+.rotateX:hover {
+    transform: rotateX(65deg);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+    background-color: steelblue;
+    box-shadow: 2px 2px 5px #000;
+}
+
+
+.skew:hover{
+    transform: skew(30deg, 10deg);
+    background-color: slateblue;
+}
+
+.skewY:hover {
+    transform: skewY(10deg);
+}
+.box img{
+    width: 100%;
+}
+
+.transition {
+    transition: width 2s, border-radius 4s, background-color 3s;
+}
+.transition:hover {
+    width: 300px;
+    height: 500px;
+    background-color: tomato;
+    border-radius: 50%;
+
+}
+
+
+.card {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #414141;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 1s;
+    overflow: hidden;
+
+}
+
+
+.card:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+.card img {
+    width: 100%;
+    transition: all 2s;
+    filter: grayscale(1);
+}
+
+.card img:hover {
+    transform: scale(1.5);
+    filter: grayscale(0);
+
+}
+
+h2.animacion {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: slateblue;
+
+    animation-name: animacion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+/* Animacion */
+@keyframes animacion {
+    0% {
+        color: aliceblue;
+        transform: scale(1);
+    }
+    25%{
+        color: rgb(170, 215, 255);
+        transform: scale(1.2);
+
+    }
+    50%{
+        color: rgb(100, 183, 255);
+        transform: scale(1.5);
+
+    }
+    75%{
+        color: rgb(170, 215, 255);
+        transform: scale(1.2);
+
+    }
+    100%{
+        background-color: aliceblue;
+        transform: scale(1);
+
+
+    }
+}
