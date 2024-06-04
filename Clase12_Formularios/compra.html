@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetado y Desarrollo Web</title>
+
+    <!-- ------------------------------ Librerías ------------------------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="stylesheet" href="muebles.css">
 </head>
 <body>
     <header class="catalogo contactos">
-        <h1>Compra</h1>
+        <h1 class="animate__animated animate__backInLeft">Compra</h1>
     </header>
     <nav>
         <ul>
@@ -34,35 +39,35 @@
             <h2> Compra</h2>
 
             <form class="form-contacto" action="contactos.html">
-                <label for="">Nombre y Apellido</label>
+                <label for=""><i class="fa-solid fa-user violeta"></i> Nombre y Apellido</label>
                 <input type="text" required minlength="3">
                 
-                <label for="">Email</label>
+                <label for=""><i class="fa-solid fa-envelope violeta"></i> Email</label>
                 <input type="email" required>
 
-                <label for="">Tel</label>
+                <label for=""><i class="fa-solid fa-mobile-screen violeta"></i> Tel</label>
                 <input type="tel">
 
                 <label for="">Medio de Pago</label>
                 
                 <div>
                     <input type="radio"  name="pago">
-                    <label for="">Efectivo</label> 
+                    <label for=""><i class="fa-solid fa-money-bill-1-wave violeta"></i> Efectivo</label> 
                 </div>
                 <div>
                     <input type="radio"  name="pago">
-                    <label for="">Tarjeta de Credito</label>
+                    <label for=""><i class="fa-solid fa-credit-card violeta"></i> Tarjeta de Credito</label>
                 </div>
                 <div>
                     <input type="radio"  name="pago">
-                    <label for="">Transferencia</label>
+                    <label for=""><i class="fa-solid fa-building-columns violeta"></i>  Transferencia</label>
                 </div>
 
 
-                <label for="">Fecha de recepción</label>
+                <label for=""><i class="fa-solid fa-calendar violeta"></i> Fecha de recepción</label>
                 <input type="date">
 
-                <label for="">Dirección de Envio</label>
+                <label for=""><i class="fa-solid fa-location-dot violeta"></i> Dirección de Envio</label>
                 <select name="" id="">
                     <option value="">Seleccionar</option>
                     <option value="">Calle Siempre viva 123</option>
@@ -83,13 +88,13 @@
         <p> Copyrigth 2024 - Mundo Mueble Todos los derechos reservados</p>
         <ul class="redes-sociales">
             <li>
-                <a class="redes" href="#">Instragam</a>
+                <a class="redes" href="#"> <i class="fa-brands fa-square-instagram rojo"></i></a>
             </li>
             <li>
-                <a class="redes"  href="#">Facebook</a>
+                <a class="redes"  href="#"><i class="fa-brands fa-facebook azul"></i></a>
             </li>
             <li>
-                <a class="redes"  href="#">Youtube</a>
+                <a class="redes"  href="#"><i class="fa-brands fa-youtube youtube"></i></a>
             </li>
         </ul>
     </footer>

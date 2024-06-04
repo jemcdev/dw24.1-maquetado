@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetado y Desarrollo Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
     <link rel="stylesheet" href="muebles.css">
 </head>
 <body>
-    <header class="catalogo contactos">
-        <h1>Contactos</h1>
+
+     
+
+
+
+    <header data-aos="zoom-out-down"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"  class="catalogo contactos">
+        <h1   >Contactos </h1>
     </header>
     <nav>
         <ul>
@@ -31,19 +43,21 @@
     </nav>
     <main class="main-galeria">
         <section class="section-contactos">
-            <h2> Contactos</h2>
+            <h2> Contactos  <i class="fa-solid fa-spinner fa-spin"></i> </h2>
 
-            <form class="form-contacto" action="contactos.html">
-                <label for="">Nombre</label>
+            <form   data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" class="form-contacto" action="contactos.html">
+                <label for=""><i class="fa-solid fa-user violeta"></i> Nombre</label>
                 <input type="text" required minlength="3">
                 
-                <label for="">Email</label>
+                <label for=""><i class="fa-solid fa-envelope violeta"></i> Email</label>
                 <input type="email" required>
 
-                <label for="">Tel</label>
+                <label for=""><i class="fa-solid fa-mobile-screen violeta"></i> Tel</label>
                 <input type="tel">
 
-                <label for="">Consulta</label>
+                <label for=""><i class="fa-solid fa-pen violeta"></i> Consulta</label>
                 <textarea rows="7"></textarea>
 
 
@@ -51,7 +65,7 @@
                 </label>
                 
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar <i class="fa-solid fa-right-long"></i></button>
 
             </form>
 
@@ -62,15 +76,19 @@
         <p> Copyrigth 2024 - Mundo Mueble Todos los derechos reservados</p>
         <ul class="redes-sociales">
             <li>
-                <a class="redes" href="#">Instragam</a>
+                <a class="redes" href="#"> <i class="fa-brands fa-square-instagram rojo"></i></a>
             </li>
             <li>
-                <a class="redes"  href="#">Facebook</a>
+                <a class="redes"  href="#"><i class="fa-brands fa-facebook azul"></i></a>
             </li>
             <li>
-                <a class="redes"  href="#">Youtube</a>
+                <a class="redes"  href="#"><i class="fa-brands fa-youtube youtube"></i></a>
             </li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

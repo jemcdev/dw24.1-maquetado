@@ -172,10 +172,25 @@ footer ul li a {
 
 .redes-sociales {
     list-style: none;
- 
-    width: 500px;
+    width: 200px;
     display: flex;
     justify-content: space-around;
+}
+
+.redes   {
+    font-size: 30px;
+}
+
+.rojo {
+    color: #dc4031;
+}
+
+.azul {
+    color: rgb(26, 60, 231);
+}
+
+.youtube {
+    color: #f1220f;
 }
 
 .form-contacto {
@@ -208,6 +223,16 @@ select:hover{
     border: 2px solid slateblue;
     box-shadow: 2px 2px 5px slateblue;
 
+}
+
+textarea:hover{
+    border: 2px solid slateblue;
+    box-shadow: 2px 2px 5px slateblue;
+
+}
+
+.violeta {
+    color: slateblue;
 }
 
 .form-contacto button {
