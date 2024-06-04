@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Montserrat', sans-serif;
+
+}
+
+body {
+    background-image: url(images/textura.webp);
+}
+
+header {
+    height: 30vh;
+    background-image: url(images/muebles.jpg);
+    background-size: cover;
+    background-position: 0% 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-height: 400px;
+}
+.muebles {
+    background-image: url(images/artesanal.jpg);
+}
+
+.empresa {
+    background-image: url(images/mueble_5.jpg);
+}
+
+.contactos {
+    background-image: url(images/contactos.jpg);
+    background-position: 0% 80%;
+
+}
+
+header h1 {
+    color: white;
+    background-color: #00000045;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 10vw;
+    font-weight: 200;
+}
+
+nav {
+    font-family:  'Montserrat', sans-serif;
+    position: sticky;
+    top: 0;
+    height: 40px;
+    background-color: #BF665E;
+    box-shadow: 0px 1px 8px #000000;
+}
+
+nav ul {
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #024959;
+}
+
+.active {
+    border-bottom: 3px solid #024959;
+
+}
+
+.main-galeria {
+    background-color: #f6f7f983;
+}
+
+.galeria {
+    min-height: 500px;
+    padding: 35px;
+    margin: 36px;
+    background-color: #f6f7f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria .foto {
+    width: 300px;
+}
+
+.promocion {
+    min-height: 300px;
+    padding: 35px;
+    margin: 36px;
+    background-color: #f6f7f9;
+    display: flex;
+    flex-direction: row;
+}
+
+.secundaria {
+    min-height: 200px;
+    padding: 35px;
+    margin: 36px;
+    background-color: #f6f7f9;
+    border: 2px solid #BF665E;
+
+    font-size: 32px;
+}
+
+.secundaria h2 {
+    font-size: 2em;
+}
+
+.secundaria p {
+    font-size: 0.5em;
+}
+
+.section-contactos {
+    min-height: 200px;
+    padding: 35px;
+    margin: 36px;
+    background-color: #f6f7f9;
+    border: 2px solid #BF665E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.col img {
+    width: 100%;
+}
+
+footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+footer p {
+    color: white;
+    padding-left: 16px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+.redes-sociales {
+    list-style: none;
+ 
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-contacto {
+    width: 50vw;
+    border: 2px solid #BF665E;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+}
+
+.form-contacto label {
+    margin-top: 10px;
+}
+
+.form-contacto input, textarea, select {
+    padding: 5px;
+    transition: all 0.7s;
+    
+}
+
+input:hover{
+    border: 2px solid slateblue;
+    box-shadow: 2px 2px 5px slateblue;
+
+}
+
+select:hover{
+    border: 2px solid slateblue;
+    box-shadow: 2px 2px 5px slateblue;
+
+}
+
+.form-contacto button {
+    background-color: #BF665E;
+    color: #f6f7f9;
+    padding: 10px;
+    margin-top: 16px;
+
+}
+
+
+
+.form-contacto button:hover {
+    background-color: #a93a30;
+    color: white;
+}
+
+/* Media Queries */
+@media ( max-width: 600px){
+    .galeria {
+        min-height: 500px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .galeria .foto {
+        width: 40vw;
+    }
+
+
+    .promocion {
+        background-color: #BF665E;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        height: 200px;
+        position: initial;
+    }
+    nav ul {
+        flex-direction: column;
+        min-height: 200px;
+    }
+
+    .galeria {
+        min-height: 500px;
+        padding: 10px;
+        margin: 16px;
+    }
+
+    .galeria .foto {
+        width: 90vw;
+    }
+    
+    .secundaria {
+        font-size: 16px;
+        padding: 10px;
+        margin: 16px;
+    }
+    
+    .promocion {
+        padding: 10px;
+        margin: 16px;
+    }
+
+    footer {
+
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer p {
+        text-align: center;
+        padding-left: 0px;
+    } 
+
+    .redes-sociales {
+     
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+}
+
+@media( max-width: 400px){
+    .secundaria {
+        min-height: 200px;
+        padding: 15px;
+        margin: 36px;    
+    }
+
+    .secundaria h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .secundaria p {
+        font-size: 0.5em;
+    }
+    
+}

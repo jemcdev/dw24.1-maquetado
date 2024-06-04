@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado y Desarrollo Web</title>
+    <link rel="stylesheet" href="muebles.css">
+</head>
+<body>
+    <header class="catalogo contactos">
+        <h1>Compra</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="muebles.html">Muebles</a>
+            </li>
+            <li>
+                <a href="empresa.html">Empresa</a>
+            </li>
+            <li>
+                <a class="active" href="contactos.html">Contactos</a>
+            </li>
+            <li>
+                <a href="compra.html">Finalizar Compra</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-galeria">
+        <section class="section-contactos">
+            <h2> Compra</h2>
+
+            <form class="form-contacto" action="contactos.html">
+                <label for="">Nombre y Apellido</label>
+                <input type="text" required minlength="3">
+                
+                <label for="">Email</label>
+                <input type="email" required>
+
+                <label for="">Tel</label>
+                <input type="tel">
+
+                <label for="">Medio de Pago</label>
+                
+                <div>
+                    <input type="radio"  name="pago">
+                    <label for="">Efectivo</label> 
+                </div>
+                <div>
+                    <input type="radio"  name="pago">
+                    <label for="">Tarjeta de Credito</label>
+                </div>
+                <div>
+                    <input type="radio"  name="pago">
+                    <label for="">Transferencia</label>
+                </div>
+
+
+                <label for="">Fecha de recepción</label>
+                <input type="date">
+
+                <label for="">Dirección de Envio</label>
+                <select name="" id="">
+                    <option value="">Seleccionar</option>
+                    <option value="">Calle Siempre viva 123</option>
+                    <option value="">Dirección dos</option>
+                </select>
+          
+                
+                <hr>
+
+                <button type="submit">Finalizar compra</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> Copyrigth 2024 - Mundo Mueble Todos los derechos reservados</p>
+        <ul class="redes-sociales">
+            <li>
+                <a class="redes" href="#">Instragam</a>
+            </li>
+            <li>
+                <a class="redes"  href="#">Facebook</a>
+            </li>
+            <li>
+                <a class="redes"  href="#">Youtube</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado y Desarrollo Web</title>
+    <link rel="stylesheet" href="muebles.css">
+</head>
+<body>
+    <header class="catalogo contactos">
+        <h1>Contactos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="muebles.html">Muebles</a>
+            </li>
+            <li>
+                <a href="empresa.html">Empresa</a>
+            </li>
+            <li>
+                <a class="active" href="contactos.html">Contactos</a>
+            </li>
+            <li>
+                <a href="compra.html">Finalizar Compra</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-galeria">
+        <section class="section-contactos">
+            <h2> Contactos</h2>
+
+            <form class="form-contacto" action="contactos.html">
+                <label for="">Nombre</label>
+                <input type="text" required minlength="3">
+                
+                <label for="">Email</label>
+                <input type="email" required>
+
+                <label for="">Tel</label>
+                <input type="tel">
+
+                <label for="">Consulta</label>
+                <textarea rows="7"></textarea>
+
+
+                <label for="">Recibir Novedades en tu email <input type="checkbox">
+                </label>
+                
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> Copyrigth 2024 - Mundo Mueble Todos los derechos reservados</p>
+        <ul class="redes-sociales">
+            <li>
+                <a class="redes" href="#">Instragam</a>
+            </li>
+            <li>
+                <a class="redes"  href="#">Facebook</a>
+            </li>
+            <li>
+                <a class="redes"  href="#">Youtube</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
